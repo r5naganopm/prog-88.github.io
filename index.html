@@ -5,21 +5,15 @@
     <title>アクセスカウンター</title>
 </head>
 <body>
-     <script>
-  fetch('YOUR_SCRIPT_URL')
-    .then(response => response.text())
-    .then(count => {
-      document.getElementById('counter').innerText = 'このページの訪問回数: ' + count;
-    });
-</script>
     <h1>アクセスカウンター</h1>
     <p id="counter">このページの訪問回数: 0</p>
 
     <script>
-        let count = localStorage.getItem('pageVisitCount') || 0;
-        count++;
-        localStorage.setItem('pageVisitCount', count);
-        document.getElementById('counter').innerText = 'このページの訪問回数: ' + count;
+        fetch('AKfycbxSc9_evkb89QNC0Ues0s0BO1BQwb9iFKKcU6dam5USG8dWe_xMtF_35TaxJ168Ey_H') // ここにスクリプトのURLを入れる
+            .then(response => response.text())
+            .then(count => {
+                document.getElementById('counter').innerText = 'このページの訪問回数: ' + count;
+            });
     </script>
 </body>
 </html>
