@@ -2,18 +2,35 @@
 <html lang="ja">
 <head>
     <meta charset="UTF-8">
-    <title>アクセスカウンター</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>画期的なウェブサイト</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <h1>アクセスカウンター</h1>
-    <p id="counter">このページの訪問回数: 0</p>
-
-    <script>
-        fetch('AKfycbxSc9_evkb89QNC0Ues0s0BO1BQwb9iFKKcU6dam5USG8dWe_xMtF_35TaxJ168Ey_H') // ここにスクリプトのURLを入れる
-            .then(response => response.text())
-            .then(count => {
-                document.getElementById('counter').innerText = 'このページの訪問回数: ' + count;
-            });
-    </script>
+    <header>
+        <h1>画期的なウェブサイトへようこそ！</h1>
+    </header>
+    <main>
+        <section id="intro">
+            <h2>このサイトについて</h2>
+            <p>新しいアイデアや技術を探索し、あなたの可能性を広げる場所です。</p>
+        </section>
+        <section id="features">
+            <h2>主な機能</h2>
+            <ul>
+                <li>インタラクティブなコンテンツ</li>
+                <li>リアルタイムデータの表示</li>
+                <li>ユーザー参加型のコミュニティ</li>
+            </ul>
+        </section>
+        <section id="cta">
+            <h2>始めましょう！</h2>
+            <button id="exploreButton">今すぐ探索</button>
+        </section>
+    </main>
+    <footer>
+        <p>© 2024 画期的なウェブサイト. All rights reserved.</p>
+    </footer>
+    <script src="script.js"></script>
 </body>
 </html>
