@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <title>アクセスカウンター</title>
+</head>
+<body>
+    <h1>アクセスカウンター</h1>
+    <p id="counter">このページの訪問回数: 0</p>
+
+    <script>
+        let count = localStorage.getItem('pageVisitCount') || 0;
+        count++;
+        localStorage.setItem('pageVisitCount', count);
+        document.getElementById('counter').innerText = 'このページの訪問回数: ' + count;
+    </script>
+</body>
+</html>
